@@ -60,22 +60,14 @@ class ViewController: UIViewController {
        
         cameraManager.capturePictureWithCompletion({ (image, error) -> Void in
             if let errorOccured = error {
-                print("error occured here.")
                 self.cameraManager.showErrorBlock("Error occurred", errorOccured.localizedDescription)
             }
             else {
-                print("no error - in let VC area")
                 let vc: ImageViewController? = self.storyboard?.instantiateViewController(withIdentifier: "ImageVC") as? ImageViewController
-                print("vc: \(vc)")
-                print("vc created")
                 if let validVC: ImageViewController = vc {
-                    print("valid VC created")
                     if let capturedImage = image {
-                        print("captured image created as image")
                         validVC.image = capturedImage
-                        print("pushing to other view")
                     self.navigationController?.pushViewController(validVC, animated: true)
-                        print("success?")
                     }
                 }
             }
