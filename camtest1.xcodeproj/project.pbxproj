@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A06C2D10613F130A686D3DB7 /* Pods_camtest1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B971C4D9C43FE00EC8D946A /* Pods_camtest1.framework */; };
+		C9499B111E23277F0038C948 /* whistle.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9499B101E23277F0038C948 /* whistle.wav */; };
 		C97116111E23005800BE4506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97116101E23005800BE4506 /* AppDelegate.swift */; };
 		C97116131E23005800BE4506 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97116121E23005800BE4506 /* ViewController.swift */; };
 		C97116161E23005800BE4506 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97116141E23005800BE4506 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		2B971C4D9C43FE00EC8D946A /* Pods_camtest1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_camtest1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEB8ED5BA342C33858F2499 /* Pods-camtest1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-camtest1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-camtest1/Pods-camtest1.debug.xcconfig"; sourceTree = "<group>"; };
+		C9499B101E23277F0038C948 /* whistle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whistle.wav; sourceTree = "<group>"; };
 		C971160D1E23005800BE4506 /* camtest1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camtest1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97116101E23005800BE4506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C97116121E23005800BE4506 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		C971160F1E23005800BE4506 /* camtest1 */ = {
 			isa = PBXGroup;
 			children = (
+				C9499B101E23277F0038C948 /* whistle.wav */,
 				C97116101E23005800BE4506 /* AppDelegate.swift */,
 				C97116121E23005800BE4506 /* ViewController.swift */,
 				C97116141E23005800BE4506 /* Main.storyboard */,
@@ -272,6 +275,7 @@
 				C971161B1E23005800BE4506 /* LaunchScreen.storyboard in Resources */,
 				C97116181E23005800BE4506 /* Assets.xcassets in Resources */,
 				C97116161E23005800BE4506 /* Main.storyboard in Resources */,
+				C9499B111E23277F0038C948 /* whistle.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

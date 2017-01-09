@@ -10,75 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "camtest1/ViewController.swift"
-            timestampString = "505614484.500005"
+            timestampString = "505620489.5476"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "ViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "camtest1/ViewController.swift"
-            timestampString = "505614491.610037"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "ViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "camtest1.ViewController.(addCameraToView in _52442A0738F4405955201719DCC8F7B9) () -&gt; ()"
-                  moduleName = "camtest1"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/matt/Desktop/apps/testapps/camtest1/camtest1/ViewController.swift"
-                  timestampString = "505614506.494648"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "204">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "camtest1.ViewController.((addCameraToView in _52442A0738F4405955201719DCC8F7B9) () -&gt; ()).(closure #1)"
-                  moduleName = "camtest1"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/matt/Desktop/apps/testapps/camtest1/camtest1/ViewController.swift"
-                  timestampString = "505614506.496827"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "camtest1/ViewController.swift"
-            timestampString = "505616488.041743"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "buttonClick(_:)"
             landmarkType = "7">
          </BreakpointContent>

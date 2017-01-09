@@ -8,6 +8,7 @@
 
 import UIKit
 import CameraManager
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -25,6 +26,22 @@ class ViewController: UIViewController {
     
     }
     
+    var player: AVAudioPlayer?
+    
+    func playSound() {
+        let url = Bundle.main.url(forResource: "whistle", withExtension: "wav")!
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            guard let player = player else { return }
+            
+            player.prepareToPlay()
+            player.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -37,17 +54,6 @@ class ViewController: UIViewController {
         cameraManager.stopCaptureSession()
     }
     
-//    fileprivate func addCameraToView()
-//    {
-//        cameraManager.addPreviewLayerToView(cameraView, newCameraOutputMode: CameraOutputMode.stillImage)
-//        cameraManager.showErrorBlock = { [weak self] (erTitle: String, erMessage: String) -> Void in
-//            
-//            let alertController = UIAlertController(title: erTitle, message: erMessage, preferredStyle: .alert)
-//            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (alertAction) -> Void in  }))
-//            
-//            self?.present(alertController, animated: true, completion: nil)
-//        }
-//    }
     
     fileprivate func addCameraToView()
     {
@@ -55,8 +61,17 @@ class ViewController: UIViewController {
         print(cameraManager.addPreviewLayerToView(self.cameraView))
         
     }
+    @IBAction func buttonDown(_ sender: Any) {
+        
+        print("button pressed")
+        playSound()
+        
+    }
     
     @IBAction func buttonClick(_ sender: Any) {
+        
+        //stop sound
+        player?.stop()
        
         cameraManager.capturePictureWithCompletion({ (image, error) -> Void in
             if let errorOccured = error {
