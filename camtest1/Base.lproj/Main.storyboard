@@ -74,6 +74,7 @@
                     <connections>
                         <outlet property="cameraButton" destination="nSm-KI-L8X" id="K0k-7V-7um"/>
                         <outlet property="cameraView" destination="5gv-UO-dRg" id="RGe-Qx-AAp"/>
+                        <segue destination="IYX-EN-0pF" kind="show" id="7NW-BT-czy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -96,6 +97,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IjI-aq-rze">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="v1n-r3-sMN">
+                                        <connections>
+                                            <action selector="action:" destination="IYX-EN-0pF" id="mw9-IP-qMo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="WoX-86-Wm4"/>
+                                    <barButtonItem title="Help" id="jUb-2r-7vl">
+                                        <connections>
+                                            <action selector="help:" destination="IYX-EN-0pF" id="8Gq-36-eLW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
